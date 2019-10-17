@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1570509680,
+	"version": 1571283996,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -46,6 +46,11 @@
 		"images/plumptexteffect-sheet0.png",
 		"images/button_2-sheet0.png",
 		"images/sprite5-sheet0.png",
+		"images/spritefont3.png",
+		"images/particles.png",
+		"images/firework.png",
+		"images/ringsplosion.png",
+		"images/sparkpop.png",
 		"media/mattoglseby - 2.ogg",
 		"media/bensound-littleidea (online-audio-converter.com).ogg",
 		"media/game_over (online-audio-converter.com).ogg",
