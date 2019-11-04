@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1572842485,
+	"version": 1572846285,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -51,6 +51,7 @@
 		"images/sprite8-sheet0.png",
 		"images/bestscore.png",
 		"images/tombolok-sheet0.png",
+		"images/gotoscore-sheet0.png",
 		"media/mattoglseby - 2.ogg",
 		"media/bensound-littleidea (online-audio-converter.com).ogg",
 		"media/game_over (online-audio-converter.com).ogg",
