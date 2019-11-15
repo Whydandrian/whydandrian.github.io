@@ -1,8 +1,8 @@
-Bagaimanakah perasaan anda hari ini ...;
-Senang;
-Jengkel;
-Sedih;
-Senang;
+Untuk mendaftar diklat, informasi dapat didapatkan pada..;
+ULT;
+Resepsionis;
+BAN-PT;
+ULT;
 |
 Apakah yang dimaksud RBI?;
 Reformasi Bank Indonesia;
