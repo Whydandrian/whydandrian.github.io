@@ -46,7 +46,9 @@
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    
+                    <div class="text-center">
+                        <h3>Hello Wahyudi!!</h3>
+                    </div>
                 </div>
 
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
