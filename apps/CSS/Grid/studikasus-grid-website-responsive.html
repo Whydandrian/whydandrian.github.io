@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Responsive Website</title>
+  <link
+   href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200;400&family=Poppins:wght@300&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <div class="container">
+   <header class="header">
+    <div class="hero">
+     <h2 class="heading">Wahyudi Andrian</h2>
+     <p class="sub-heading">wahyudi ganteng</p>
+    </div>
+    <div class="features feature-1">
+     <h4 class="price">Sunset</h4>
+     <p class="item">Perception 1</p>
+    </div>
+    <div class="features feature-2">
+     <h4 class="price">Sunset Beach</h4>
+     <p class="item">Perception 2</p>
+    </div>
+   </header>
+
+   <nav class="menu">
+    <div class="menu-toggle">
+     <input type="checkbox" />
+     <span></span>
+     <span></span>
+     <span></span>
+    </div>
+    <div class="brand">
+     <h1>WHYDS</h1>
+    </div>
+    <ul class="menu-list">
+     <li><a href="">Home</a></li>
+     <li><a href="">Products</a></li>
+     <li><a href="">About</a></li>
+     <li><a href="">Gallery</a></li>
+    </ul>
+   </nav>
+
+   <section class="services">
+    <div class="service">
+     <div class="icon">🌇</div>
+     <h3>Beautiful Sunset</h3>
+     <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio error
+      eius consectetur vel inventore mollitia.
+     </p>
+    </div>
+    <div class="service">
+     <div class="icon">⛰️</div>
+     <h3>Mountain</h3>
+     <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio error
+      eius consectetur vel inventore mollitia.
+     </p>
+    </div>
+    <div class="service">
+     <div class="icon">💒</div>
+     <h3>Wedding Plan</h3>
+     <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio error
+      eius consectetur vel inventore mollitia.
+     </p>
+    </div>
+    <div class="service">
+     <div class="icon">🌅</div>
+     <h3>Sunrise</h3>
+     <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio error
+      eius consectetur vel inventore mollitia.
+     </p>
+    </div>
+   </section>
+
+   <section class="gallery">
+    <h3>Gallery</h3>
+    <img src="https://source.unsplash.com/random/201x201" alt="" />
+    <img src="https://source.unsplash.com/random/202x202" alt="" />
+    <img src="https://source.unsplash.com/random/203x203" alt="" />
+    <img src="https://source.unsplash.com/random/204x204" alt="" />
+    <img src="https://source.unsplash.com/random/205x205" alt="" />
+    <img src="https://source.unsplash.com/random/206x206" alt="" />
+    <img src="https://source.unsplash.com/random/207x207" alt="" />
+    <img src="https://source.unsplash.com/random/208x208" alt="" />
+    <img src="https://source.unsplash.com/random/209x209" alt="" />
+    <img src="https://source.unsplash.com/random/201x201" alt="" />
+   </section>
+  </div>
+  <script>
+   const menuToggle = document.querySelector(".menu-toggle");
+   const nav = document.querySelector("nav ul");
+
+   menuToggle.addEventListener("click", function () {
+    nav.classList.toggle("slide");
+   });
+  </script>
+ </body>
+</html>

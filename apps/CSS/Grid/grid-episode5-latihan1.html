@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS GRID Latihan 3 | MinMax</title>
+  <style>
+   html,
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+   }
+
+   .container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+     "header header header"
+     "sidebar sidebar sidebar"
+     "content content content"
+     "footer footer footer";
+   }
+
+   .item {
+    width: 100%;
+    background-color: rgb(104, 212, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+   }
+
+   /* .item:nth-child(even) {
+    background-color: rgb(255, 239, 94);
+   } */
+
+   .header {
+    grid-area: header;
+    background-color: rgb(104, 212, 255);
+   }
+
+   .sidebar {
+    grid-area: sidebar;
+    background-color: antiquewhite;
+   }
+
+   .content {
+    grid-area: content;
+    background-color: rgb(255, 190, 104);
+   }
+
+   .footer {
+    grid-area: footer;
+    background-color: rgb(210, 105, 224);
+   }
+
+   /* Responsive Breakpoint */
+   @media screen and (min-width: 576px) {
+    .container {
+     grid-template-areas:
+      "header header header"
+      "sidebar content content"
+      "sidebar content content"
+      "footer footer footer";
+    }
+   }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="item header">Header</div>
+   <div class="item sidebar">Sidebar</div>
+   <div class="item content">Content</div>
+   <div class="item footer">Footer</div>
+  </div>
+ </body>
+</html>
