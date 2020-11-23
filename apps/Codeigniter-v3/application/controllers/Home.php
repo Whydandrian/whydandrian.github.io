@@ -7,11 +7,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
  * ! email whydandrian@gmail.com
  */
 
-class Welcome extends CI_Controller
+class Home extends CI_Controller
 {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('home');
 	}
 }
