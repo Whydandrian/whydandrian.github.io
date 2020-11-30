@@ -11,21 +11,24 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row mt-4">
             <div class="col">
                 <h2>Bagian 1 - PHP Dasar</h2>
                 <h4>Point Pertama</h4>
                 <?php
                 /**
                  * Tutorial resource :
-                 * ==== Rata-rata =====
-                 * 1. https://stackoverflow.com/questions/52390338/how-to-sum-array-using-function-in-php
+                 * ==== Point Pertama =====
+                 * 1. Stackoverflow : https://stackoverflow.com/questions/52390338/how-to-sum-array-using-function-in-php
                  * 2. PHP Manual Official
                  * 
-                 * ==== Nilai Tertinggi ====
-                 * 
-                 * ==== Nilai Terendah ====
+                 * ==== Point Kedua ====
+                 * 1. Website : https://r00t4bl3.com/post/how-to-limit-foreach-loop-to-a-number-of-loops-in-php
+                 * 2. sort php - W3 School
+                 *
+                 * ==== Point Ketiga ====
+                 * 1. Github : https://gist.github.com/iqbalfl/e5afad5103f9c2f9b91bca729f2e00f1
                  */
 
                 $dataNilai = "72 65 73 78 75 74 90 81 87 65 55 69 72 78 79 91 100 40 67 77 86";
@@ -133,9 +136,7 @@
 
                 echo generateUBT('Jakarta adalah ibukota negara Republik Indonesia');
 
-                // Unigram : Jakarta, adalah, ibukota, negara, Republik, Indonesia
-                // Bigram : Jakarta adalah, ibukota negara, Republik Indonesia
-                // Trigram : Jakarta adalah ibukota, negara Republik Indonesia
+
 
 
                 ?>
