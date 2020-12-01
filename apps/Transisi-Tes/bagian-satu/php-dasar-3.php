@@ -23,8 +23,49 @@
                 <div class="card">
                     <div class="card-body">
                         <p>
-                            Tabel diatas didapat dengan :
+                            Array multidimensi sebagai berikut:
                         </p>
+                        Array = [
+                        <br>['f','g','h','i'],
+                        <br>['j','k','p','q'],
+                        <br>['r','s','t','u']
+                        <br>];
+
+                        <?php
+                        $array = [
+                            ['f', 'g', 'h', 'i'],
+                            ['j', 'k', 'p', 'q'],
+                            ['r', 's', 't', 'u']
+                        ];
+                        function cari($array, $input)
+                        {
+                            if (is_array($array)) {
+
+                                // echo $key;
+                                echo  "<br>";
+                                foreach ($array as $id => $val) {
+                                    for ($kolom = 0; $kolom <= count($array); $kolom++) {
+                                        $bandingan = $array[$id][$kolom];
+                                        // echo  $bandingan . " ";
+                                        $string = str_split("$input");
+                                        foreach ($string as $key => $data_cari) {
+                                            echo $key . "=>" . $data_cari . "<br>";
+                                            // if ($data_cari == $array[$id][$kolom]) {
+                                            //     echo "sama";
+                                            // }
+                                        }
+                                        // echo "[$id][$kolom], ";
+                                    }
+                                    echo  "<br>";
+                                }
+                            }
+                        }
+                        echo cari($array, "fghi");
+                        ?>
+
+                        <br><strong>Kata yang dicari : fghi | => Hasil </strong>
+                        <br><strong>Kata yang dicari : fghp | => Hasil </strong>
+                        <br><strong>Kata yang dicari : fjrstp | => Hasil </strong>
                     </div>
                 </div>
 
