@@ -57,8 +57,6 @@
                 }
                 $hasil = rata_rata($exp);
                 echo nl2br("Hasil rata-rata menggunakan method : $hasil");
-
-                echo "<h4 class='mt-2'>Point Kedua</h4>";
                 echo "<h5>Urutkan 7 data terbesar ke terkecil</h5>";
 
                 //Sort data dari kecil ke besar
@@ -83,6 +81,22 @@
                     echo "Nilai = " . $dataDesc;
                     echo "<br>";
                 }
+
+                echo "<h4 class='mt-2'>Point Kedua</h4>";
+                /** 
+                 * Resource count lower case
+                 * Stackoverflow - count uppercase and lowercase letter without using regex in php
+                 */
+                function jumlah_lowcase($string)
+                {
+                    $string    = $string;
+                    $upperCase = strtoupper($string);
+
+                    $upperDiff = similar_text($string, $upperCase);
+                    echo "<br>";
+                    echo "Lowercase:" . (strlen($string) - $upperDiff); // 6
+                }
+                echo jumlah_lowcase("Pt tranSISI TekNoloGi ManDirI");
 
                 //POINT KETIGA
                 echo "<h4 class='mt-2'>Point Ketiga</h4>";
@@ -135,9 +149,6 @@
                 }
 
                 echo generateUBT('Jakarta adalah ibukota negara Republik Indonesia');
-
-
-
 
                 ?>
             </div>
