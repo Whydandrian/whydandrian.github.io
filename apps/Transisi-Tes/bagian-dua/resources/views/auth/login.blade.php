@@ -80,6 +80,9 @@
                         </div>
                     </form>
                 </div>
+                <div class="card-footer text-muted">
+                    <p class="text-danger">*Fungsi Belum Selesai</p>
+                  </div>
             </div>
         </div>
     </div>
