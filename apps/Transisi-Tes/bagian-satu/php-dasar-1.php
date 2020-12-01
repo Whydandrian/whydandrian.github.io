@@ -15,6 +15,10 @@
         <div class="row mt-4">
             <div class="col">
                 <h2>Bagian 1 - PHP Dasar</h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
                 <h4>Point Pertama</h4>
                 <?php
                 /**
@@ -81,28 +85,37 @@
                     echo "Nilai = " . $dataDesc;
                     echo "<br>";
                 }
-
-                echo "<h4 class='mt-2'>Point Kedua</h4>";
-                /** 
+                ?>
+            </div>
+            <div class="col">
+                <h4>Point Kedua</h4>
+                <?php
+                /**
                  * Resource count lower case
                  * Stackoverflow - count uppercase and lowercase letter without using regex in php
                  */
                 function jumlah_lowcase($string)
                 {
-                    $string    = $string;
-                    $upperCase = strtoupper($string);
-
-                    $upperDiff = similar_text($string, $upperCase);
+                    echo "Kata yang dimasukkan dalam function adalah : <br>";
+                    echo $string;
+                    //mengubah string menjadi huruf besar(kapital)
+                    $upper_case = strtoupper($string);
+                    //menghitung apakah string yang diinputkan sama atau tidak yang ada di variabel $upperCase
+                    $upper_different = similar_text($string, $upper_case);
                     echo "<br>";
-                    echo "Lowercase:" . (strlen($string) - $upperDiff); // 6
+                    echo "<strong>Hasil penjumlahan lowecase pada kata:" . (strlen($string) - $upper_different) . "</strong>";
                 }
                 echo jumlah_lowcase("Pt tranSISI TekNoloGi ManDirI");
-
+                ?>
+            </div>
+            <div class="col">
+                <h4>Point Ketiga</h4>
+                <?php
                 //POINT KETIGA
-                echo "<h4 class='mt-2'>Point Ketiga</h4>";
-
                 function generateUBT($input)
                 {
+                    echo "<strong>Kata yang dimasukkan yakni : </strong><br>" . $input . "<br><hr>";
+
                     $arr_input = explode(' ', $input);
 
                     // Perulangan untuk menghasilkan Unigram
@@ -113,50 +126,46 @@
                     $unigram = substr($unigram, 0, -2);
 
                     // Perulangan untuk menghasilkan Bigram
-                    $x = 0;
+                    $i = 0;
                     $bigram = '';
                     foreach ($arr_input as $item) {
-                        if ($x < 1) {
+                        if ($i < 1) {
                             $bigram .= $item . ' ';
-                            $x++;
+                            $i++;
                         } else {
                             $bigram .= $item . ', ';
-                            $x = 0;
+                            $i = 0;
                         }
                     }
                     $bigram = substr($bigram, 0, -2);
 
                     // Perulangan untuk menghasilkan Trigram
-                    $y = 0;
+                    $j = 0;
                     $trigram = '';
                     foreach ($arr_input as $item) {
-                        if ($y < 2) {
+                        if ($j < 2) {
                             $trigram .= $item . ' ';
-                            $y++;
+                            $j++;
                         } else {
                             $trigram .= $item . ', ';
-                            $y = 0;
+                            $j = 0;
                         }
                     }
                     $trigram = substr($trigram, 0, -2);
 
 
-                    $result = 'Unigram : ' . $unigram . '<br>';
-                    $result .= 'Bigram : ' . $bigram . '<br>';
-                    $result .= 'Trigram : ' . $trigram;
+                    $result = '<strong>Unigram : </strong>' . $unigram . '<br><hr>';
+                    $result .= '<strong>Bigram : </strong>' . $bigram . '<br><hr>';
+                    $result .= '<strong>Trigram : </strong>' . $trigram;
 
                     return $result;
                 }
 
                 echo generateUBT('Jakarta adalah ibukota negara Republik Indonesia');
-
                 ?>
             </div>
-            <div class="col"></div>
         </div>
     </div>
-
-
     <script src="../../Codeigniter-v3/assets/bootstrap/js/jquery-3.5.1.min.js"></script>
     <script src="../../Codeigniter-v3/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
