@@ -21,41 +21,48 @@
             <div class="col">
 
                 <h4>Point Pertama</h4>
-                <?php
-                /**
-                 * Tutorial resource :
-                 *
-                 */
-
-                // for ($i = 1; $i <= 6; $i++) {
-                //     echo $i;
-                // }
-
-                function enkripsi($input)
-                {
-                    echo $input . "\n";
-                    for ($i = 1; $i <= 10; $i++) {
-                        if (($i % 2) == 0) {
-                            echo $i;
-                        }
-                        echo $i;
-                    }
-                }
-
-                echo enkripsi("DFHKNQ");
-                ?>
-            </div>
-            <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        This is some text within a card body.
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <h4>Point Kedua</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <?php
+                        /**
+                         * Tutorial Reference :
+                         * W3School PHP Array, String, Looping
+                         *
+                         */
+
+                        function enkripsi($input)
+                        {
+                            echo $input;
+                            $string = str_split("$input");
+
+                            foreach ($string as $id => $val) {
+                                $id = $id + 1;
+                                if ($id % 2 == 0) {
+                                    $index = -abs($id);
+                                    $kode_ascii_genap = ord($val) + $index;
+                                    echo chr($kode_ascii_genap) . "";
+                                } else {
+                                    $kode_ascii_ganjil = ord($val) + $id;
+                                    echo chr($kode_ascii_ganjil) . "";
+                                }
+                            }
+                        }
+                        echo enkripsi("DFHKNQ");
+                        ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <script src="../../Codeigniter-v3/assets/bootstrap/js/jquery-3.5.1.min.js"></script>
     <script src="../../Codeigniter-v3/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
