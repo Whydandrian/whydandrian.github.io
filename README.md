@@ -7,3 +7,4 @@ Berikut ini hal yang saya pelajari dan masukkan dalam portfolio:
 4. CSS Dasar
 5. ReactJs(Hello World)
 6. Codeigniter v4(masih akan dipelajari)
+7. Tes dasar yang pernah dilakukan
