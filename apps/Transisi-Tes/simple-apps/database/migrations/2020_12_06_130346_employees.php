@@ -13,7 +13,13 @@ class Employees extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('employees', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('employees_name');
+            $table->integer('companies_id');
+            $table->string('email');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class Employees extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('employees');
     }
 }
