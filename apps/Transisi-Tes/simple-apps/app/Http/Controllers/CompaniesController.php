@@ -7,7 +7,15 @@ use Illuminate\Http\Request;
 class CompaniesController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Menampbahkan middleware untuk authentication page
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Menampilkan data yang ada pada tabel companies
      *
      * @return \Illuminate\Http\Response
      */
@@ -17,7 +25,7 @@ class CompaniesController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Menampilkan halaman penambahan data companies
      *
      * @return \Illuminate\Http\Response
      */
@@ -27,7 +35,7 @@ class CompaniesController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Menambahkan/menyimpan data baru pada tabel companies.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -38,7 +46,7 @@ class CompaniesController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Menampilkan data companies berdasarkan ID companies
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -49,7 +57,7 @@ class CompaniesController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Menampilkan data companies yang akan di edit sesuai ID.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -60,7 +68,7 @@ class CompaniesController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update data companies sesuai ID.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -72,7 +80,7 @@ class CompaniesController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Menghapus data companies berdasarkan ID
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
