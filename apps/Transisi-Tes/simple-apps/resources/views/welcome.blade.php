@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{ asset('/storage/logo-transisi.jpg') }}" alt="">
+                    <img src="{{ asset('/storage/logo.png') }}" alt="">
                 </div>
 
                 {{-- <div class="links">
